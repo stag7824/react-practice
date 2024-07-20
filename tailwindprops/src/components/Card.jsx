@@ -1,5 +1,5 @@
-import React from 'react'
-
+// import React from 'react'
+import PropTypes from 'prop-types';
 function Card({name='GUGU', description="GUGU DESC"}) {
     console.log(name, description);
     return (
@@ -21,6 +21,11 @@ function Card({name='GUGU', description="GUGU DESC"}) {
             </div>
         </div>
     )
+}
+
+Card.propTypes = {
+    name: PropTypes.string,
+    description: PropTypes.string
 }
 
 export default Card
